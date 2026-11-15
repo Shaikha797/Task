@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Cost Calculatort</title>
+    <link rel="stylesheet" href="Task.css">
+</head>
+<body>
+    <section>
+        <nav class="nav">
+            <h1>Recipe Cost Calculator</h1>
+            <h4>Calculate ingredient costs and scale portions instantly.</h4>
+        </nav>
+    </section>
+
+    <section>
+        <div class="container">
+            
+            <div class="box1"> 
+                
+                
+                
+                <div style="display: flex; flex-direction: row; gap: 500px;">
+                <h1 style="padding-left: 20px;">Ingredients</h1>
+                <button type="submit" class="btn"  onclick="addIngredient()">+ Add Ingredient</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Qty / Quantity</th>
+                            <th>Unit Cost ($)</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="ingredientTable">
+                    </tbody>
+                </table>
+
+
+
+            </div>
+
+            <div class="box2">
+                <h1 style="margin-left: 10px;">Summary</h1>
+
+                <label>Servings</label>
+                <input type="number" id="servings" value="4" min="1"
+                    oninput="calculateCost()">
+
+                    <div class="summary">
+                    <p>Total Recipe Cost:</p>
+                    <h2 id="totalCost">$12.50</h2>
+
+                    <hr>
+
+                    <p>Cost Per Serving:</p>
+                    <h2 id="perServing">$3.13</h2>
+                </div>
+
+                <button class="save" onclick="saveRecipe()">
+                    Save Recipe
+                </button>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+        <script src="Task.js"></script>
+
+</body>
+</html>
