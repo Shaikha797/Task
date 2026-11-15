@@ -1,5 +1,4 @@
 
-// Default Chicken Biriyani Ingredients
 
 let ingredients = [
     { name: "Basmati Rice (kg)", qty: 1, cost: 120 },
@@ -14,7 +13,6 @@ let ingredients = [
 ];
 
 
-// Display Ingredients
 
 function displayIngredients() {
 
@@ -26,7 +24,6 @@ function displayIngredients() {
 
         let row = document.createElement("tr");
 
-        // Item Name
         let nameCell = document.createElement("td");
         let nameInput = document.createElement("input");
 
@@ -40,7 +37,6 @@ function displayIngredients() {
         nameCell.appendChild(nameInput);
 
 
-        // Quantity
         let qtyCell = document.createElement("td");
         let qtyInput = document.createElement("input");
 
@@ -57,7 +53,6 @@ function displayIngredients() {
         qtyCell.appendChild(qtyInput);
 
 
-        // Unit Cost
         let costCell = document.createElement("td");
         let costInput = document.createElement("input");
 
@@ -74,7 +69,6 @@ function displayIngredients() {
         costCell.appendChild(costInput);
 
 
-        // Delete Button
         let actionCell = document.createElement("td");
         let deleteButton = document.createElement("button");
 
@@ -101,7 +95,6 @@ function displayIngredients() {
 }
 
 
-// Add New Ingredient
 
 function addIngredient() {
 
@@ -116,7 +109,6 @@ function addIngredient() {
 }
 
 
-// Update and Delete Ingredient
 
 function deleteIngredient(index) {
 
@@ -127,7 +119,6 @@ function deleteIngredient(index) {
 }
 
 
-// Calculate Recipe Cost
 
 function calculateCost() {
 
@@ -156,7 +147,6 @@ function calculateCost() {
 }
 
 
-// Save Recipe
 
 function saveRecipe() {
 
@@ -187,6 +177,5 @@ function saveRecipe() {
 }
 
 
-// Initial Display
 
 displayIngredients();
