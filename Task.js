@@ -1,7 +1,6 @@
 let ingredients = [];
 
 
-// Display Ingredients
 function displayIngredients() {
 
     let table = document.getElementById("ingredientTable");
@@ -12,7 +11,6 @@ function displayIngredients() {
 
         let row = document.createElement("tr");
 
-        // Ingredient Name
         let nameCell = document.createElement("td");
         let nameInput = document.createElement("input");
 
@@ -26,7 +24,6 @@ function displayIngredients() {
         nameCell.appendChild(nameInput);
 
 
-        // Quantity
         let qtyCell = document.createElement("td");
         let qtyInput = document.createElement("input");
 
@@ -46,7 +43,6 @@ function displayIngredients() {
         qtyCell.appendChild(qtyInput);
 
 
-        // Ingredient Cost
         let costCell = document.createElement("td");
         let costInput = document.createElement("input");
 
@@ -66,7 +62,6 @@ function displayIngredients() {
         costCell.appendChild(costInput);
 
 
-        // Delete Button
         let actionCell = document.createElement("td");
         let deleteButton = document.createElement("button");
 
@@ -87,14 +82,13 @@ function displayIngredients() {
 
         table.appendChild(row);
 
-    });
+    }); 
 
     calculateCost();
 
 }
 
 
-// Add Ingredient
 function addIngredient() {
 
     ingredients.push({
@@ -110,7 +104,6 @@ function addIngredient() {
 }
 
 
-// Delete Ingredient
 function deleteIngredient(index) {
 
     ingredients.splice(index, 1);
@@ -120,7 +113,6 @@ function deleteIngredient(index) {
 }
 
 
-// Calculate Total Recipe Cost and Cost Per Serving
 function calculateCost() {
 
     let ingredientCost = 0;
@@ -144,19 +136,16 @@ function calculateCost() {
         : 0;
 
 
-    // Display Total Recipe Cost
     document.getElementById("totalCost").innerText =
         "$" + totalCost.toFixed(2);
 
 
-    // Display Cost Per Serving
     document.getElementById("perServing").innerText =
         "$" + perServing.toFixed(2);
 
 }
 
 
-// Save Recipe
 function saveRecipe() {
 
     let servings = Number(
@@ -212,5 +201,4 @@ function saveRecipe() {
 }
 
 
-// Initial Display
 displayIngredients();
