@@ -1,16 +1,7 @@
 
 
 let ingredients = [
-    { name: "Basmati Rice (kg)", qty: 1, cost: 120 },
-    { name: "Chicken (kg)", qty: 1, cost: 220 },
-    { name: "Onion (kg)", qty: 0.5, cost: 60 },
-    { name: "Tomato (kg)", qty: 0.25, cost: 60 },
-    { name: "Cooking Oil (litre)", qty: 0.1, cost: 150 },
-    { name: "Curd (kg)", qty: 0.2, cost: 100 },
-    { name: "Biriyani Spices", qty: 1, cost: 40 },
-    { name: "Ginger Garlic Paste (kg)", qty: 0.1, cost: 150 },
-    { name: "Mint & Coriander", qty: 1, cost: 20 }
-];
+]
 
 
 
